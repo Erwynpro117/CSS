@@ -40,16 +40,53 @@ Se usa la anotacion numeral (#) antes del nombre del id.
 }
 
     - Hijo directo
+
+    Selecciona elementos que son hijos directos de un elemento padre.
+
+    elemento > elementos hijos{
+    propiedades: valor;
+}
+
     - Elemento adjacente
     - Hermano general
 
 5. Selectores de atributos
+
     -Atributo
+
+    Selecciona elementos segun el atributo que indiquemos. Sin importar su valor.
+
+    elemento[atribuo] {
+    propiedad: valor
+}
+
     -Atributo-valor
+
+    - Atributo - Valor
+
+    Selecciona elementos segun el atributo y el valor que indiquemos.
+
+    elemento[atributo=valor] {
+    propiedad: valor;
+}
+
 
 6. Selectores avanzados
     -Pseudo-clases
+
+    Seleccionamos elementos en un estado en particular
+
+    elemento:pseudoclase {
+    propiedad: valor;
+}
+
     -Pseudo-elementos
+
+    Seleccionanpartes especificas de un elemento en html
+
+    elemento::pseudoelemento {
+    propiedad: valor;
+}
 
 */
 
@@ -116,4 +153,69 @@ aside section {
     text-align: right;
     padding: 24px;
     background-color: lightcoral;
+}
+
+/* Combinados - Hijos directos */
+
+ul > li {
+    background-color: blue;
+}
+
+.Lista > li {
+    font-size: 12px;
+}
+
+
+/*/Combinados- Elemento adjacente/*/
+h3 + ul {
+ list-style: none;
+}
+.bro + li{
+ background-color: #f00000;
+}
+
+/* Combinados - Hermano general */
+
+.bro + li - li {
+    
+}
+
+.tercero - li {
+    color: black;
+}
+
+/* Selector de atributo */
+a[href] {
+    display: block;
+    text-decoration: none;
+    color: magenta;
+}
+
+/* Selector de atributo con valor */
+
+a[href="https://www.Instagram.com"] {
+    font-size: 48px;
+    color: orangered;
+}
+
+/* Pseudo-clases */
+
+a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+}
+
+a:focus {
+    border: 3px solid red;
+}
+
+/* Pseudo - elemento */
+
+a::after {
+    contain: "💎";
+}
+
+a::before {
+    content: "Este es un enlace hacia:";
 }
