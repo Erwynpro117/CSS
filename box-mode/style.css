@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: darkslateblue;
+}
+
+/* 
+
+Box model
+
+Es un concepto fundamental que describe como los elementos de una pagina web se organizan y calculan su tamaño. 
+
+1. Contenido (content)
+
+Es el area donde se encuentra el texto, las imagenes y otro elemento hijo. El tamaño de esa area se define con las propiedades with y height.
+
+2. Relleno (padding)
+
+Es el espácio del contenido y el borde de la caja. Ayuda a crear un espacio interno al rededor del contenido.
+
+La propiedad del padding es un "shorthand" que controla los cuatro lados posibles de la caja.
+
+    padding: top right button left;
+    padding: top left/right button;
+    padding: top/button ight/left;
+    padding: trbl;
+
+    padding-top: valor;
+    padding-right: valor;
+    padding-button: valor;
+    padding-left: valor;
+
+3. Borde (border)
+
+Es el borde que rodea el content y el padding. Podemos personalizar su estilo y color. Tambien es un propiedad en "shorthand"
+
+    border: ancho estilo color; 
+
+    border-whidht: valor;
+    border-style: valor;
+    border-color: valor;
+
+    Valores de estilo de borde:
+
+    -none
+    -hidden
+    -solid
+    -dotted
+    -dashed
+    -doble
+    -grove
+    -ridge
+    -inset
+    -ouset
+
+4. Margen
+
+es la propiedad que permite tener espacio entre en borde de un elemento y otros elementos de la pagina. Tambien es un shorthand.
+
+    margin: top right button left;
+    margin: top right/left button;
+    margin: top/button right/left;
+    margin: t/r/b/l;
+
+    margin-top: valor;
+    margin-right: valor;
+
+*/
+
+/* Content */
+
+h2 {
+    padding: 24px;
+    border: 5px solid black;
+    margin: 8px 16px 24px 32px;
+    width: 200px;
+    height: 80px;
+    background-color: rebeccapurple;
+}
+
+img {
+    padding: 24px 48px;
+    border-width: 24px;
+    border-style: inset;
+    border-color: red;
+    margin: 12px 24px 48px;
+    width: 600px;
+    background-color: gray;
+}
+
+ul {
+    padding: 24px 48px 64px;
+    border-top-width: 20px;
+    border-top-style: dashed;
+    border-top-color: blue;
+    border-left-width: 10px;
+    border-left-style: groove;
+    border-left-color: aqua;
+    margin: 48px 8px;
+    width: 400px;
+    height: auto;
+    list-style: none;
+    background-color: aquamarine;
+}
+
+li {
+    padding: 8px 16px 24px 32px;
+    border-bottom-width: 10px;
+    border-bottom-style: dotted;
+    border-bottom-color: gold;
+    margin: 24px;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}
