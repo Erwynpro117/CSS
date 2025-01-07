@@ -1,0 +1,45 @@
+body {
+    background-color: darkblue;
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 
+
+Bloque y linea 
+
+-Los elementos de bloque miden todo el ancho disponible de su contenedor 
+
+-Los elementos de bloque miden el alto de su contenido
+
+-Los elementos de linea miden el ancho de su contenido 
+
+-Los elementos de linea miden el alto de su contenido, considerando un espacio entre lineas.
+
+
+
+-Width(ancho) y Height (alto)
+
+Se usan para establecer las dimensiones de un elemento en una pagina web
+
+Estas propiedades permiten definir el tamaño de los elementos, como cajas, imagenes, o contenedores de manera explicita.
+
+- Width establece el ancho de un elemento y podemos especificar su dimension horizontal 
+
+*/
+
+.bloque {
+    width: 100px;
+    width: 50px;
+    width: auto;
+
+    height: 100px;
+    height: 50px;
+
+    background-color: lightcoral;
+}
+
+.linea {
+    background-color: lightgreen;
+}
+
