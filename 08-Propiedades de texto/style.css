@@ -1,0 +1,97 @@
+body {
+    background-color: aqua;
+}
+
+/* 
+
+Propiedades de texto estan relacionadas con el estilo o formato de los textos.
+
+Permitencontrolar su apariencia, alineacion, espacio y decoracion.
+
+Principales 
+
+color: -> Define el color del texto. Recibe diferentes tipos de parametros: keywords, hexadecimal, rgb o rgba, hls, tranparent.
+
+font-family. -> Define la familia tipografica del texto. Recibe los nombres de las familias. si son mas de dos palabras se escribe entre comillas. Acepta mas de dos valores separados por coma "," como fuentes de respaldo.
+
+font-size -> Define el tamaño del texto.
+Acepta valores en px, em y rem, porcentaje, terminos definidos.
+
+font-style -> El estilo la fuente y recibe tres parametros normal, italic y oblique.
+
+text-aling: -> Define la alineacion del texto. Recibe los valores left, right, center, justify, start y end.
+
+text-decoration -> Añade una linea tranversal al texto. Recibe los valores: none, underline, overline, line-throught.
+
+<<<<<<< HEAD
+text-tranform -> Controla capitalizacion del texto
+
+Line-height -> Espacio entre las lineas de texto. Recibe valores en px, %, em y rem, un valor sin unidad sera relativo al tamaño de la fuente.
+
+letter-spacing -> Espacio entre letras. Recibe valores en px, %, em y rem.
+
+text-shadow -> Sombra del texto.Recibe los valores en el siguiente orden: oofset-x offset-y blur y color
+
+    10px 10px 10px red -> Derecha y abajo
+    -10
+
+=======
+>>>>>>> 69d078df31d633fe7889ef74a37a4c6dd91e7683
+*/
+
+h1 {
+    color: violet;
+    font-family: Impact, Helvetica;
+    font-size: 96px;
+    font-size: 400%;
+    font-size: xx-large;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration: line-through;
+<<<<<<< HEAD
+
+    letter-spacing: 20px;
+    letter-spacing: 1rem;
+    letter-spacing: 2em;
+    letter-spacing: -10px;
+
+    text-shadow: 10px 10px 5px red;
+=======
+>>>>>>> 69d078df31d633fe7889ef74a37a4c6dd91e7683
+}
+
+p {
+    color: beige;
+    font-family: "Courier New", Tahoma;
+    font-size: 24px;
+    font-size: 100%;
+    font-size: x-large;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+<<<<<<< HEAD
+    text-transform: uppercase;
+    text-transform: lowercase;
+
+    line-height: 24px;
+    line-height: 150%;
+    line-height: 4;
+    line-height: 1rem;
+    line-height: 1em;
+
+    word-spacing: 10px;
+    word-spacing: 2rem;
+    word-spacing: 1em;
+=======
+>>>>>>> 69d078df31d633fe7889ef74a37a4c6dd91e7683
+}
+
+.important {
+    text-decoration: overline;
+}
+
+a {
+    color: yellow;
+    font-size: larger;
+    text-decoration: underline;
+}
