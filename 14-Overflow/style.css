@@ -1,0 +1,51 @@
+/* 
+
+Overflow
+(desvordamiento)
+
+Es la propiedad que controla el comportamiento de un contenedor cuando el contenido se desborda
+
+DEsbordar -> Cuando el contenido de un elemento sale de por fuera de los bordes de la caja que lo contiene.
+
+Es una propiedad shorthand que engloba las propiedades overflow-x y overflow-y
+
+Tiene 4 valores: 
+
+    visible -> Es valor por defecto
+    hidden -> El contenido que se desborda se ocultara a partir del borde del contenedor.
+    scroll -> Aparezcan barras de scroll es eje asignado 
+    auto ->Aparcera las barras de scroll solo en caso de ser necesario.
+
+*/
+
+html {
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: darkmagenta;
+
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.box2 {
+    width: fit-content;
+    overflow: hidden;
+    background-color: darkmagenta;
+    border-radius: 50px;
+
+}
