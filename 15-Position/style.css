@@ -1,0 +1,145 @@
+/* 
+
+Posotion
+
+Es la propiedad  que nos permite posicionar los elemenos del html.
+
+Conceptos importantes:
+
+  1. Flujo de renderizado: los elementos en html se dibujan de izquierda a derecha y de arriba hacia abajo.
+
+  2. Espacio reservado: Es el espacio que tiene um elemento asignado en el navegador.
+
+  3. Elemento posicionado: Es cuando su propia "position" tiene un valor distinto a "static", que es el valor por defoult
+
+  4. Stacking context: Contexto de Apilamiento. Es el orden en el que se superponen o se apilan, los elementos en html.
+
+Al posicionar un elemnento se habilitan 5 propiedades que podemos usar para mover el elemento en 3 ejes. (x,y,z)
+
+  top -> Movera el elemento desde la parte superior.
+  right -> Movera el elemento desde la parte derecha.
+  bottom -> Movera el elemento desde la parte inferior.
+  left -> Movera el elemento desde la parte izquirda.
+
+fixed -> el elemento perdera sus medidas y su espacio reservado si lo movemos usara el elemento html como referencia y qeudara fijo en esa posicion aunque hagamos scroll.
+
+sticky -> Es una mezcla de "relative" y fixed. Con este valor, las propiedades top, right, bottom y left, no sirven para mover el elemento . Si no para indicarle en que punto pasara a tener un comportamiento
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: darkcyan;
+    color: crimson;
+}
+
+.container {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: darkmagenta;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-1 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    right: 50px;
+    bottom: 100px;
+    z-index: 1;
+    background-color: aqua;
+}
+
+.box-2 {
+    position: relative;
+    left: 50px;
+    top: -25px;
+    z-index: 10;
+    background-color: darkmagenta;
+}
+
+.box-3 {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+}
+
+.box-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: cornflowerblue;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: darkorchid;
+}
+
+nav a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    z-index: ;
+    text-align: center;
+    padding-top: 18px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aqua;
+}
+
+main {
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto;
+    background-color: darkmagenta;
+}
+
+main section {
+    padding: 0 24px;
+}
+
+section h2 {
+    position: sticky;
+    font-size: 34px;
+    background-color: darkred;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
